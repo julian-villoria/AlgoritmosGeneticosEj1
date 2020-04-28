@@ -61,7 +61,7 @@ def promedio(suj):               #promedio de sujetos de un ciclo
 def cicl(sujetos,ciclos):                      
     if ciclos >= 0:
 
-        padres = []                            #inicializacion listas iniciales
+        padres = []                            #inicializacion listas
         listFitness = [] 
         hijos = [] 
         hijosEnt = []                        
@@ -84,7 +84,7 @@ def cicl(sujetos,ciclos):
             genran = randint(0,9) 
             sujetos[genran] = mut(sujetos[genran])
         
-        for i in hijos:                         #agregar hijos para plot
+        for i in hijos:                         #agregar hijos para todos y enteros
             hijosEnt.append(sujetoaentero(i))
             todos.append(sujetoaentero(i))
         
@@ -116,7 +116,7 @@ for q in range(10):
     plotMin = []
     plotProm = [] 
 
-    for i in sujetos:                        #carga poblacion inicial en plot
+    for i in sujetos:                        #carga poblacion inicial en todos
         todos.append(sujetoaentero(i))  
 cicl(sujetos,ciclos)
 
