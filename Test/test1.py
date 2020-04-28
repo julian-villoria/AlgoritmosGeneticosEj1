@@ -118,7 +118,7 @@ for q in range(10):
 
     for i in sujetos:                        #carga poblacion inicial en todos
         todos.append(sujetoaentero(i))  
-cicl(sujetos,ciclos)
+cicl(sujetos,ciclos)                         #recursion para que los sujetos sean los hijos en la siguiente iteracion
 
 
     
