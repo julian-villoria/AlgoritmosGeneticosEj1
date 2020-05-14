@@ -72,16 +72,15 @@ def cicl(sujetos,ciclos):
         for i in range(10):                     #seleccionar los padres
             padres.append(sujetos[selec(listFitness)])  
         
-        j=1    
         for i in range(0,10,2):                     #aplicar crossover
             if  random() <= porcencross:                       
-                hijos.extend(cross([padres[i],padres[j]]))
+                hijos.extend(cross([padres[i],padres[i+1]]))
             else:
-                hijos.extend([padres[i],padres[j]])
-            j+=2 
+                hijos.extend([padres[i],padres[i+1]])
             if random() <= porcenmut:               #aplicar mutacion
                 hijos[i] = mut(hijos[i])
-                hijos[j] = mut(hijos[j])
+            if random() <= porcenmut:
+                hijos[i+1] = mut(hijos[i+1])
         
         for i in hijos:                         #agregar hijos para todos y enteros
             hijosEnt.append(sujetoaentero(i))
