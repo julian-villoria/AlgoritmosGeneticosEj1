@@ -79,10 +79,8 @@ def cicl(sujetos,ciclos):
             else:
                 hijos.extend([padres[i],padres[j]])
             j+=2 
-    
-        if random() <= porcenmut:               #aplicar mutacion
-            genran = randint(0,9) 
-            sujetos[genran] = mut(sujetos[genran])
+            if random() <= porcenmut:               #aplicar mutacion
+                hijos[i] = mut(hijos[i])
         
         for i in hijos:                         #agregar hijos para todos y enteros
             hijosEnt.append(sujetoaentero(i))
@@ -97,6 +95,7 @@ def cicl(sujetos,ciclos):
     else:
         #mostrar datos    
         print(max(todos))
+        print(max(todos)/(((2**30)-1)))
         plt.style.use('ggplot')
         plt.plot(list(range(len(plotMax))),plotMax,label="Maximos")  
         plt.plot(list(range(len(plotMin))),plotMin,label="Minimos")
