@@ -81,6 +81,7 @@ def cicl(sujetos,ciclos):
             j+=2 
             if random() <= porcenmut:               #aplicar mutacion
                 hijos[i] = mut(hijos[i])
+                hijos[j] = mut(hijos[j])
         
         for i in hijos:                         #agregar hijos para todos y enteros
             hijosEnt.append(sujetoaentero(i))
