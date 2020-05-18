@@ -9,6 +9,7 @@ ciclos = 20
 "hola"
 "hola2"
 "hola3"
+"hola4"
 
 def f(x):                              #declaracion funcion objetivo
     return (x/((2**30)-1))**2
