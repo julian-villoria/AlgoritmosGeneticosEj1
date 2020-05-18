@@ -5,8 +5,10 @@ from random import *
 porcencross = 0.75                     #constantes
 porcenmut = 0.05
 ciclos = 20
-"hola2"
+
 "hola"
+"hola2"
+"hola3"
 
 def f(x):                              #declaracion funcion objetivo
     return (x/((2**30)-1))**2
