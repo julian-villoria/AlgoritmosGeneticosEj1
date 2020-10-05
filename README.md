@@ -1,2 +1,2 @@
 # AlgoritmosGeneticosEj1
-Ejercicio de Algoritmo genético (en busca del mayor valor de una función).
+Ejercicio de Algoritmos genéticos (en busca del mayor valor de una función).
